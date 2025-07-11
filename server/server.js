@@ -19,7 +19,10 @@ await connectDB(); // Connect to MongoDB
 await connectCloudinary(); // Connect to Cloudinary
 
 //allow multiple origins
-const allowedOrigins = ["http://localhost:5173", "https://www.getpostman.com", "https://samanstores.vercel.app"];
+const allowedOrigins = ["http://localhost:5173", "https://www.getpostman.com", "https://samanstores.vercel.app",
+  "https://samanstores-git-main-janidumadawa.vercel.app", // preview deployment
+  /\.vercel\.app$/, // allow any vercel subdomain (regex if using `cors` 2.x)
+];
 
 //middleware configeration
 app.use(express.json());
