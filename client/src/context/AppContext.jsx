@@ -3,7 +3,6 @@ import { createContext, useContext, useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import toast from "react-hot-toast";
 import axios from "axios";
-import { set } from "mongoose";
 
 axios.defaults.withCredentials = true; // Allow cookies to be sent with requests
 axios.defaults.baseURL = import.meta.env.VITE_BACKEND_URL;
